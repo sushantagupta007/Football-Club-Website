@@ -1,0 +1,243 @@
+/* CSS rule for Player Card */
+#main_contanier{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.player-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    row-gap: 27px;
+    column-gap: 30px;
+}
+.card{
+    padding:15px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    width:330px;
+    height:474px;
+}
+.card img{
+    Width:100%;
+    Height:256px;
+}
+.card div{
+    margin-top:16px;
+}
+.player-info{
+    width:300px;
+}
+.player-info> h2{
+    margin: 0px 0px 5px 0px;
+    padding: 0px;
+}
+
+.player-name{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.player-description{
+    font-size: 16px;
+    font-weight: 400;
+    padding:0;
+    margin: 5px 0px 0px 0px;
+}
+
+/* CSS rule for Player Card */
+
+/* Css rule for Aside container */
+.highlights{
+    width:100%;
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+.highlight-text h1{
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+.highlight-text p{
+    margin-top: 4px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #6C6C6C;
+}
+.featuredImage img{
+    width:567px;
+    height:427px;
+}
+/* Css rule for Aside container */
+
+/* css rule for news part */
+.newcontainer{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 30px;
+    padding:0px;
+    margin:0px;
+}
+.newsCard{
+    padding:10px;
+    width:345px;
+    height:auto;
+    background: #FFFFFF;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);;
+}
+.newsCard img{
+    width:100%;
+}
+.newsCard img:hover{
+   transform: scale(1.05);
+   transition: transform 2s ease;
+}
+   
+.newsCard a{
+    font-size: 28px;
+    font-weight: bold;
+    color:#2D25A0;
+}
+/* css rule for news part */
+
+/* CSS rule for footer */
+
+#footer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-social-icon{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-social-icon div{
+    padding: 0px;
+    margin-right: 14px;
+    
+}
+.icon{
+    width:32px;
+    height:32px;
+    border-radius: 50%;
+    background:#0B0D17;
+    opacity:0.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-twitter, 
+.fa-youtube,.fa-instagram,.fa-basketball-ball{
+    color:#989899;
+}
+/* CSS rule for footer */
+
+/* Media Queries for Mobile Devices up 480px*/
+
+/* Device Size 48opx: moble devices (source: https://www.freecodecamp.org/) */
+@media  (max-width:768px){
+    
+/* Header Responsive */
+#header{
+    width:100%;
+    height:auto;
+}
+    
+    .header-nav{
+        display: none;
+    }
+/* Header Responsive */
+/* Header Banner Responsive */
+    .copa-logo-title{
+        width:90%;
+        grid-template-columns: 1fr;
+    }
+    .copa-title h1{
+        font-size: 36px;
+        margin: 69px 49px 25px 33px
+    }
+    .copa-logo img{
+        width:80%;
+        height: 260px;
+    }
+    .copa-logo img:hover{
+        animation-iteration-count: 1;
+    }
+
+    .watch-button{
+        margin-left: 33px;
+        margin-bottom: 50px;
+    }  
+/* Header Banner Responsive */ 
+/*Main Container */
+#main_contanier{
+    width:98%;
+}
+
+/* Player Card Responsive */
+    .player-cards{
+        display: grid;
+        grid-template-columns:1fr;
+    }
+    .player-info{
+        width:300px;
+        margin-left: 20px;
+    }
+/* Player Card Responsive */
+
+/*High Light CSS Responsive*/
+    .highlights{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width:98%;
+        height:auto;
+    }
+    .highlight-text{
+        height:299px;
+        /* padding-left: 25px; */
+        margin-left: 10px;
+    }
+    .highlight-text>h1{
+        font-size: 20px;
+        /* padding-left: 20px;  */
+    }
+    .highlight-text p{
+        /* padding-left: 25px;
+        padding-right: 25px; */
+        font-size: 16px;
+    }
+   
+    .featuredImage img{
+        width:95%;
+        height:248px; 
+        /* margin-left: 10px; */
+    }
+    .watch-highlight-button{
+        margin-left: 10px;
+    }
+/*High Light CSS Responsive*/
+
+/* News Container */
+    .newcontainer{
+        grid-template-columns: 1fr;
+    }
+    /* .newsCard p, a {
+        /* margin-left: 20px; */
+    .newsCard a{
+        font-size: 18px;
+    }
+    .newsCard img{
+        width:98%;
+    }
+/* News Container */
+    /* Footer  */
+    .footer-logo img{
+        width:100%;
+    }
+    
+}
